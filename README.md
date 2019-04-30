@@ -1,4 +1,4 @@
-# Outer Join in class
+# Outer Join Graded Classwork
 
 
 Use the included SQL to create 2 tables and load them with data.
@@ -17,3 +17,4 @@ Create a Join that lists ONLY Departments that have Employees
 
 ### Challenges
 Create a Join that lists the number of employees per department
+Create a join that only lists employees assigned to an apartment who also have a company laptop assigned
