@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS departments (
 CREATE TABLE IF NOT EXISTS employees (
                                          employee_id serial PRIMARY KEY,
                                          employee_name VARCHAR (255),
+                                         laptop_type VARCHAR(50),
                                          department_id INTEGER
 );
 
@@ -20,12 +21,13 @@ VALUES
 
 INSERT INTO employees (
     employee_name,
+    laptop_type,
     department_id
 )
 VALUES
-('Bette Nicholson', 1),
-('Christian Gable', 1),
-('Joe Swank', 2),
-('Fred Costner', 3),
-('Sandra Kilmer', 4),
-('Julia Mcqueen', NULL);
+('Bette Nicholson',NULL, 1),
+('Christian Gable', 'ASUS', 1),
+('Joe Swank',NULL, 2),
+('Fred Costner','LENOVA', 3),
+('Sandra Kilmer','HP', 4),
+('Julia Mcqueen', NULL, NULL);
